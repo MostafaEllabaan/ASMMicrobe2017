@@ -53,7 +53,7 @@ We can use megablast to map the nt ORFs to plasmid database.
 # Workshop
 
 ## 1. Login in to the Amazon cloud
-### for windows users you need t o install putty. 
+### for windows users you need to install putty. 
 You can download it from this website https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html.
  install this "putty-64bit-0.69-installer.msi" on your machine. 
  
@@ -82,6 +82,10 @@ You can download it from this website https://www.chiark.greenend.org.uk/~sgtath
  >> when the puTTy run you should type  ASM2017 
  >> Note that linux does not show any change while typing of password. so it is your responsibility to remember to put 
  >> ASM2017 right and in order.
+
+### for windows users you need to install putty. 
+
+ ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i ASMWorkshopKey.pem 
 
 
 ## 2. Prepare your directories
