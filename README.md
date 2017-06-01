@@ -83,9 +83,9 @@ You can download it from this website https://www.chiark.greenend.org.uk/~sgtath
  >> Note that linux does not show any change while typing of password. so it is your responsibility to remember to put 
  >> ASM2017 right and in order.
 
-### for windows users you need to install putty. 
+### for Linux
 
- ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i ASMWorkshopKey.pem 
+ ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i Downloads/ASMWorkshopKey.pem 
 
 
 ## 2. Prepare your directories
