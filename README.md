@@ -85,7 +85,7 @@ You can download it from this website https://www.chiark.greenend.org.uk/~sgtath
 
 ### for Linux
 ```shell
-chmod +x Downloads/ASMWorkshopKey.pem 
+chmod 600 Downloads/ASMWorkshopKey.pem 
 ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i Downloads/ASMWorkshopKey.pem 
 
 ```
