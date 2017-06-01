@@ -106,9 +106,9 @@ mkdir Programs
 
 ## 3. Finding Open Reading Frames (ORFs)
 ### Installation of Genemark
-- Go to http://exon.gatech.edu/Genemark/ and search for programs and click on the link it will take you to http://exon.gatech.edu/Genemark/license_download.cgi 
+- Go to http://exon.gatech.edu/Genemark/license_download.cgi 
 - Select GeneMarkS v.4.30 and LINUX 64 and fill the form then click on the button "I agree to the terms of this license agreement" 
-- Download both the program and the key
+- Download both the program and the key by copying the address of here and key.
 
 ```shell
 cd ~/Programs
