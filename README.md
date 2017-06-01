@@ -401,28 +401,6 @@ awk '
 BEGIN {print "Gene\tNumberOfORFsObserved"; sum=0;} 
 {print $2"\t"$1; sum=sum+$1} 
 END {print "Total\t"sum}' 
-
- 
-## protein versus card nucleotide
-~/Programs/ncbi-blast-2.6.0+/bin/tblastn -query ../orfs.protein.fa -db ~/Databases/CARD/blastNA/CARDNucl -outfmt 6 \
- -max_target_seqs 10 -evalue 1E-50 -word_size 4 -num_threads 28 -out orf.card.AA.versus.NA.tab 
- 
- 
- 
-sort -k1,1 -k12,12nr orf.card.AA.versus.NA.tab  | 
-awk -F"\t" '{if(FNR==1) {geneID=$1; print $0} 
-else {if(geneID!=$1) {geneID=$1; print $0}}}' >  orf.card.AA.versus.NA.tab.txt.top1.txt
-
-## to show the frequency of Antibiotic resistance genes observed.
-
-wc -l   orf.card.AA.versus.NA.tab.txt.top1.txt
-## to show the frequency of Antibiotic resistance genes observed.
-cut -f1,2  orf.card.AA.versus.NA.tab.txt.top1.txt |  sort -u  | cut -f2 |  sort | 
-uniq -c |  
-awk '
-BEGIN {print "Gene\tNumberOfORFsObserved"; sum=0;} 
-{print $2"\t"$1; sum=sum+$1} 
-END {print "Total\t"sum}' 
  
 
 ## protein versus card protein
