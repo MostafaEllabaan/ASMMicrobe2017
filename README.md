@@ -84,9 +84,11 @@ You can download it from this website https://www.chiark.greenend.org.uk/~sgtath
  >> ASM2017 right and in order.
 
 ### for Linux
+```shell
+chmod +x Downloads/ASMWorkshopKey.pem 
+ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i Downloads/ASMWorkshopKey.pem 
 
- ssh ec2-user@ec2-52-38-71-192.us-west-2.compute.amazonaws.com -i Downloads/ASMWorkshopKey.pem 
-
+```
 
 ## 2. Prepare your directories
 ```shell
