@@ -152,9 +152,8 @@ git clone https://github.com/EvdH0/ASMworkshop
 
 cp ASMworkshop/data/sample.fasta .
 
-gmsuite=~/Programs/genemark_suite_linux_64/gmsuite
-$gmsuite/gmhmmp -m $gmsuite/MetaGeneMark_v1.mod \
--A orfs.protein.fa -D orfs.nucleotide.fa -o all.orfs.result sample.fasta
+
+~/Programs/genemark_suite_linux_64/gmsuite/gmhmmp -m ~/Programs/genemark_suite_linux_64/gmsuite/MetaGeneMark_v1.mod -A orfs.protein.fa -D orfs.nucleotide.fa -o all.orfs.result sample.fasta
 
 cat orfs.nucleotide.fa 
 cat orfs.protein.fa 
