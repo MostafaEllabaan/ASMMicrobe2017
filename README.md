@@ -155,6 +155,8 @@ cp ASMworkshop/data/sample.fasta .
 
 ~/Programs/genemark_suite_linux_64/gmsuite/gmhmmp -m ~/Programs/genemark_suite_linux_64/gmsuite/MetaGeneMark_v1.mod -A orfs.protein.fa -D orfs.nucleotide.fa -o all.orfs.result sample.fasta
 
+## to keep the insert information to be in the blast output.
+sed -i 's/\t>/__/g' orfs.nucleotide.fa orfs.protein.fa  
 cat orfs.nucleotide.fa 
 cat orfs.protein.fa 
 
